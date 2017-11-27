@@ -9,4 +9,8 @@ console.log('Is BlockChain Valid after first Block? ' + angCoin.isBlockChainVali
 angCoin.addNewTransactionBlockToTransactionChain(new Block(uuid(), new Date().getTime().valueOf(), {amount : '10$'}));
 console.log('Is BlockChain Valid after second Block? ' + angCoin.isBlockChainValid());
 console.log('Blockchain so far ');
-console.log(JSON.stringify(angCoin, null, 4));
+// console.log(JSON.stringify(angCoin, null, 4));
+console.log('Tampering the Data of the First Block (not Genesis Block)');
+angCoin.transactionChain[1].transactionData = {amount : '$100'};
+console.log('Is BlockChain Valid after Tampering? ' + angCoin.isBlockChainValid());
+

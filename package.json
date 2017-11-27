@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/abhiit89/AngCoins/issues"
   },
-  "homepage": "https://github.com/abhiit89/AngCoins#readme"
+  "homepage": "https://github.com/abhiit89/AngCoins#readme",
+  "devDependencies": {
+    "crypto-js": "^3.1.9-1",
+    "uuid": "^3.1.0"
+  }
 }

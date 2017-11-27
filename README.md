@@ -1,4 +1,4 @@
-ANG Coins
+`ANG Coins`
 
 This is the sample App for a very basic and primitive implementation of the Blockchain
 
@@ -10,14 +10,13 @@ Each block consist of a the following
 2. Hash of the current block
 3. Hash of the previous block
 
-Blockchains ensures
+`Blockchains ensures`
 
 1. Data Integrity - Easy to detect if the data is been tampered
-2. Data Security - Data is always encrypted
-3. Trust factor - Blockchain is a distributed ledger containing all the transactions and each transactions can be veririfed by anyone.
+3. Trust factor - Blockchain is a distributed ledger containing all the transactions and each transactions can be verified by anyone.
 
 
-To Run the Project
+```To Run the Project```
 
-1. from the AngCoins Directory, run npm install
-2. then run npm print chain
+1. from the AngCoins Directory, run `npm install`
+2. then run `npm print chain`

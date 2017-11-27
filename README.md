@@ -15,3 +15,9 @@ Blockchains ensures
 1. Data Integrity - Easy to detect if the data is been tampered
 2. Data Security - Data is always encrypted
 3. Trust factor - Blockchain is a distributed ledger containing all the transactions and each transactions can be veririfed by anyone.
+
+
+To Run the Project
+
+1. from the AngCoins Directory, run npm install
+2. then run npm print chain

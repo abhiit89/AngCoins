@@ -3,6 +3,7 @@ const Block = require('./block');
 module.exports = class Blockchain {
     constructor() {
         this.transactionChain = [this.returnGenesisBlock()];
+        this.difficulty = 2;
 
     }
 
@@ -16,7 +17,7 @@ module.exports = class Blockchain {
 
     addNewTransactionBlockToTransactionChain(currentBlock) {
         currentBlock.previousTransactionHash = this.returnLatestBlock().currentTransactionHash;
-        currentBlock.currentTransactionHash = currentBlock.calculateBlockDigest();
+        currentBlock.mineNewBlock(this.difficulty);
         this.transactionChain.push(currentBlock);
     }
 
